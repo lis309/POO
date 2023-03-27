@@ -3,8 +3,21 @@ package Salud3;
 //Heredar la clase Persona3 a la subclase Empleado
 public class Empleado extends Persona3{
     //Atributos propios de la clase empleado
-    private String cargo,departamento;
-    private int valorHora, horasTrabajadas=0;
+    private String cargo;
+    private String departamento;
+    private int valorHora=0; 
+    private int horasTrabajadas=0;
+
+    //método constructor de la subclase y trajimos los atributos de la super clase
+    public Empleado(String tipoDoc,int documento, String nombre, String apellido, int peso, double estatura, int edad, String sexo, 
+    String cargo, String departamento, int valorHora, int horasTrabajadas) {
+        super(tipoDoc,documento,nombre,apellido,peso,estatura,edad,sexo);
+        this.cargo=cargo;
+        this.departamento=departamento;
+        this.valorHora=valorHora;
+        this.horasTrabajadas=horasTrabajadas;
+
+    }
 
     //getters y settters de la subclase
 
@@ -40,16 +53,7 @@ public class Empleado extends Persona3{
         this.horasTrabajadas = horasTrabajadas;
     }
 
-    //método constructor de la subclase y trajimos los atributos de la super clase
-    public Empleado(String tipoDoc,int documento, String nombre, String apellido, int peso, double estatura, int edad, String sexo, 
-    String cargo, String departamento, int valorHora, int horasTrabajadas) {
-        super(tipoDoc,documento,nombre,apellido,peso,estatura,edad,sexo);
-        this.cargo=cargo;
-        this.departamento=departamento;
-        this.valorHora=valorHora;
-        this.horasTrabajadas=horasTrabajadas;
-
-    }
+    
 
     //métodos de la subclase
     public int calcularHonorarios(int valorHora,int horasTrabajadas) {

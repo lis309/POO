@@ -1,12 +1,15 @@
 package Salud3;
 
-import java.util.Scanner;
-
 public class Persona3 {
     //atributos de la clase persona
-    public int documento,edad=0;
-    public String nombre,sexo,apellido,tipoDoc;
-    public double estatura,peso=0;
+    private int documento=0;
+    private int edad=0;
+    private String nombre;
+    private String sexo;
+    private String apellido;
+    private String tipoDoc;
+    private Double estatura;
+    private Double peso;
 
     //método constructor con parametros
     public Persona3(String tipoDoc,int documento, String nombre, String apellido, double peso, double estatura, int edad, String sexo) {
@@ -88,12 +91,9 @@ public class Persona3 {
         this.estatura = estatura;
     }
 
-    //Instanciar la clase scanner
-    Scanner Capturar=new Scanner(System.in);
-
     //métodos de la clase persona
 
-    public void mostrarPersona(){
+    public void mostrarPersona3(){
         System.out.println("Su tipo de documento es: "+getTipoDoc());
         System.out.println("Su número de documento es: "+getDocumento());
         System.out.println("Su nombre es: "+getNombre());
@@ -105,7 +105,7 @@ public class Persona3 {
         
     }
 
-    public void calcularImc() {
+    public void calcularImc3() {
         Double pesoActual;
         pesoActual=peso/(estatura*estatura);
 

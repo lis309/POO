@@ -4,9 +4,14 @@ import java.util.Scanner;
 
 public class Persona {
     //atributos de la clase persona
-    private int documento,edad=0;
-    private String nombre,sexo,apellido,tipoDoc;
-    private double estatura,peso=0;
+    private int documento=0;
+    private int edad=0;
+    private String nombre;
+    private String sexo;
+    private String apellido;
+    private String tipoDoc;
+    private Double estatura;
+    private Double peso;
 
     //Instanciar la clase scanner
     Scanner Capturar=new Scanner(System.in);
@@ -23,7 +28,7 @@ public class Persona {
         System.out.println("Digite su apellido");
         apellido=Capturar.next();
         System.out.println("Digite su peso en kilos");
-        peso=Capturar.nextInt();
+        peso=Capturar.nextDouble();
         System.out.println("Digite su estatura en metros");
         estatura=Capturar.nextDouble();
         System.out.println("Digite su edad");

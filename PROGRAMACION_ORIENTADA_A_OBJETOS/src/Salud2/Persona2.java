@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class Persona2 {
         //atributos de la clase persona
-        private int documento,edad=0;
-        private String nombre,sexo,apellido,tipoDoc;
+        private int documento=0;
+        private int edad=0;
+        private String nombre;
+        private String sexo;
+        private String apellido;
+        private String tipoDoc;
     
         //método constructor vacio
         public Persona2() { 

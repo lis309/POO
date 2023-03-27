@@ -49,8 +49,8 @@ public class Inicio3 {
         totalPagar=honorarios-reiteca;
 
         //invocar métodos de la clase persona
-        Sofia.mostrarPersona();
-        Sofia.calcularImc();
+        Sofia.mostrarPersona3();
+        Sofia.calcularImc3();
         //invocar método de la subclase
         Sofia.mostrarEmpleado();
         System.out.println("Su pago total de honorarios es "+totalPagar);
