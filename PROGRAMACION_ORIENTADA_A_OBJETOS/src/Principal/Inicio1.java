@@ -1,6 +1,6 @@
 package Principal;
 
-import Salud1.Persona;
+import Salud.Persona;
 
 public class Inicio1 {
     public static void main(String[] args) {

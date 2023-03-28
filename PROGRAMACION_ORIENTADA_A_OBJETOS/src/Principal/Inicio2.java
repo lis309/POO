@@ -2,7 +2,7 @@ package Principal;
 
 import java.util.Scanner;
 
-import Salud2.Persona2;
+import Salud.Persona2;
 
 public class Inicio2 {
     public static void main(String[] args) {
